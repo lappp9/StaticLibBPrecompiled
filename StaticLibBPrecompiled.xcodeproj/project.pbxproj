@@ -6,11 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		AE08383D1E85C2B5001DA251 /* StaticLibBPrecompiled.m in Sources */ = {isa = PBXBuildFile; fileRef = AE08383C1E85C2B5001DA251 /* StaticLibBPrecompiled.m */; };
-		AE08383E1E85C2B5001DA251 /* StaticLibBPrecompiled.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE08383B1E85C2B5001DA251 /* StaticLibBPrecompiled.h */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		AE0838361E85C2B5001DA251 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -18,7 +13,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				AE08383E1E85C2B5001DA251 /* StaticLibBPrecompiled.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +20,6 @@
 
 /* Begin PBXFileReference section */
 		AE0838381E85C2B5001DA251 /* libStaticLibBPrecompiled.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibBPrecompiled.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE08383B1E85C2B5001DA251 /* StaticLibBPrecompiled.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibBPrecompiled.h; sourceTree = "<group>"; };
-		AE08383C1E85C2B5001DA251 /* StaticLibBPrecompiled.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibBPrecompiled.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +52,6 @@
 		AE08383A1E85C2B5001DA251 /* StaticLibBPrecompiled */ = {
 			isa = PBXGroup;
 			children = (
-				AE08383B1E85C2B5001DA251 /* StaticLibBPrecompiled.h */,
-				AE08383C1E85C2B5001DA251 /* StaticLibBPrecompiled.m */,
 			);
 			path = StaticLibBPrecompiled;
 			sourceTree = "<group>";
@@ -124,7 +114,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE08383D1E85C2B5001DA251 /* StaticLibBPrecompiled.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +212,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FPLWU74ZS9;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -233,6 +226,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FPLWU74ZS9;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -258,6 +255,7 @@
 				AE0838431E85C2B5001DA251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
