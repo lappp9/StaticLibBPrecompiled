@@ -9,7 +9,8 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://google.com/'
   spec.source_files = 'StaticLibB/**/*', 'include/**/*'
 
-  spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lc++' }
+  #spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lc++' }
+  spec.libraries = 'c++'
 
   spec.vendored_libraries = 'lib/libStaticLibB.a'
   spec.public_header_files = 'include/**/*'
